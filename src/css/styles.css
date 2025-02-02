@@ -8,3 +8,25 @@
 .card.custom-card{
     background-color: #1e3a8a;
 }
+body {
+    overflow-x: hidden; /* Evita el desbordamiento horizontal en todo el cuerpo */
+  }
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0 20px; /* Añade un poco de padding para evitar desbordamiento */
+}
+  
+.map-container iframe {
+    width: 300px; /* Ajusta el ancho del mapa */
+    height: 300px; /* Ajusta la altura del mapa para hacerlo más cuadrado */
+}
+iframe {
+    width: 100%; /* Ajusta el ancho del iframe */
+    max-width: 90vw; /* Limita el ancho máximo en vista de escritorio */
+    height: 80vh; /* Ajusta la altura según tus necesidades */
+  }
