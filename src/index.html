@@ -47,47 +47,44 @@
         </div>
     </nav>
     <!--Carrousel-->
-
-    <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-md-32rem">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Banner_1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets\img\1.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/public/assets/img/banner_contacto.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-    </div>
+          <div class="carousel-item">
+            <img src="img/Banner_2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Banner_3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <!--Showcase-->
     <section class="p-5 text-center text-sm-start" id="nosotros">
         <div class="container">
@@ -101,7 +98,7 @@
                     <p class="lead text-left">Email:</p>
                     <p class="lead text-left">Direccion:</p>
                 </div>
-                <img class="d-none d-sm-block" src="../public/assets/img/images.webp" alt="">
+                <img class="d-none d-sm-block" src="img\images.webp" alt="">
             </div>
         </div>
     </section>
@@ -183,35 +180,31 @@
         </div>
     </section>
     <!--Instalaciones-->
-    <section class="p-3 custom-navbar text-center text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1 class="text-light">Instalaciones:</h1>
-                    <div class="container">
-                        <div><!--Inner-->
-                            <div><!--List-->
-                                <div class="mix">
-                                    
-                                    <a href=""><img class="d-none d-sm-block" src="../public/assets/img/1.jpeg" alt=""></a>
-                                </div>
-                                <div class="mix">
-                                    <a href="">
-                                        <img class="d-none d-sm-block" src="../public/assets/img/2.jpeg" alt="">
-                                    </a>
-                                </div>
-                                <div class="mix">
-                                    <a href="">
-                                        <img class="d-none d-sm-block" src="../public/assets/img/3.jpeg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="p-5 custom-navbar align-center">
+        <div class="container custom-navbar">
+            <div class="heading-py-4">
+                <h1 class="text-light text-center">Instalaciones</h1>
+            </div>
+    
+            <div class="row-custom">
+                <img src="/public/assets/img/1.jpeg" alt="Imagen 1" onclick="openLightbox('/public/assets/img/1.jpeg')">
+                <img src="/public/assets/img/2.jpeg" alt="Imagen 2" onclick="openLightbox('/public/assets/img/2.jpeg')">
+                <img src="/public/assets/img/3.jpeg" alt="Imagen 3" onclick="openLightbox('/public/assets/img/3.jpeg')">
+                <img src="/public/assets/img/4.jpeg" alt="Imagen 4" onclick="openLightbox('/public/assets/img/4.jpeg')">
+                <img src="/public/assets/img/5.jpeg" alt="Imagen 5" onclick="openLightbox('/public/assets/img/5.jpeg')">
+                <img src="/public/assets/img/6.jpeg" alt="Imagen 6" onclick="openLightbox('/public/assets/img/6.jpeg')">
+                <img src="/public/assets/img/7.jpeg" alt="Imagen 7" onclick="openLightbox('/public/assets/img/7.jpeg')">
+                <img src="/public/assets/img/8.jpeg" alt="Imagen 8" onclick="openLightbox('/public/assets/img/8.jpeg')">
             </div>
         </div>
     </section>
+    <!--Lightbox-->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
     <!--Ubicacion-->
     <section class="p-3 custom-navbar text-center">
         <div class="container">
@@ -235,5 +228,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
