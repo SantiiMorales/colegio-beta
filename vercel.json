@@ -1,26 +1,12 @@
 {
     "builds": [
       {
-        "src": "src/index.html",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "src"
-        }
-      },
-      {
         "src": "public/**/*",
         "use": "@vercel/static"
       }
     ],
     "routes": [
-      {
-        "src": "/assets/(.*)",
-        "dest": "/public/assets/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/src/$1"
-      }
+      { "src": "/assets/img/(.*)", "dest": "/assets/img/$1" }
     ]
   }
   
