@@ -13,10 +13,15 @@
     background-position: center;
     background-size: cover;
 }
+.img-body{
+    width: 15rem;
+}
 body {
     overflow-x: hidden; /* Evita el desbordamiento horizontal en todo el cuerpo */
 }
-
+.custom-margin {
+    margin-right: 1rem; /* Agrega un margen a la derecha de 1rem */
+  }
 .row-custom {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
@@ -117,6 +122,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
+@media (max-width: 768px) {
+    .text-md-start {
+        text-align: center !important;
+    }
+    .text-md-end{
+        text-align: center !important
+    }
+}
 /* Ajustes adicionales para pantallas pequeñas */
 @media (max-width: 768px) {
     .map-container iframe {
