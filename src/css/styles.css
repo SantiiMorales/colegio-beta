@@ -145,3 +145,53 @@ iframe {
     max-width: 90vw; /* Limita el ancho máximo en vista de escritorio */
     height: 80vh; /* Ajusta la altura según tus necesidades */
   }
+/*Recursos*/
+
+
+#horariosList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#horariosList li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#horariosList li:last-child {
+    border-bottom: none;
+}
+
+#horariosList a {
+    text-decoration: none;
+    color: #2c5282;
+    font-weight: bold;
+}
+
+#horariosList a:hover {
+    text-decoration: underline;
+}
+
+#utilesList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#utilesList li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#utilesList li:last-child {
+    border-bottom: none;
+}
+
+#utilesList a {
+    text-decoration: none;
+    color: #2c5282;
+    font-weight: bold;
+}
+
+#utilesList a:hover {
+    text-decoration: underline;
+}
