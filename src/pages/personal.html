@@ -7,6 +7,27 @@
     <title>Personal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="../ico/download-removebg-preview.ico">  
+    <style>
+                /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        /* El contenido principal (main) debe crecer para ocupar el espacio disponible */
+        main {
+            flex: 1;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #2c5282;
+            
+        }
+    </style>
 </head>
   <body>
     <!---Navbar--->
@@ -44,21 +65,26 @@
         </div>
     </nav>
     <!--Organigrama-->
-    <div class="mt-4 mb-4">
-        <div class="container mb-4">
-            <img src="../img/Organigrama-1024x429.webp" class="img-fluid" alt="Responsive image">
+    <main>
+        <!--Organigrama-->
+        <div class="container mt-4 mb-4 text-center"> <!-- Agregar text-center -->
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <img src="../img/Organigrama-1024x429.webp" class="img-fluid w-75 mx-auto" alt="Responsive image"> <!-- w-75 y mx-auto -->
+                </div>
+                <div class="col-12">
+                    <img src="../img/BLOG_Noticias-Aucal-19.jpg" class="img-fluid w-75 mx-auto" alt="Responsive image"> <!-- w-75 y mx-auto -->
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <img src="../img/BLOG_Noticias-Aucal-19.jpg" class="img-fluid" alt="Responsive image">
-        </div>
-    </div>
+    </main>
 
 
 
 
     <!--Footer-->
     <footer>
-        <div class="container align-center">
+        <div class="container align-center text-light">
             <div class="row justify-content-center">
                 <div class="col-lg-4 text-light">
                   <h5>Hecho por Santiago Morales</h5>
