@@ -17,14 +17,14 @@ function closeLightbox() {
 // Navegación entre imágenes (opcional)
 let currentImageIndex = 0;
 const images = [
-    '/public/assets/img/1.jpeg',
-    '/public/assets/img/2.jpeg',
-    '/public/assets/img/3.jpeg',
-    '/public/assets/img/4.jpeg',
-    '/public/assets/img/5.jpeg',
-    '/public/assets/img/6.jpeg',
-    '/public/assets/img/7.jpeg',
-    '/public/assets/img/8.jpeg'
+    'img/1.jpeg',
+    'img/2.jpeg',
+    'img/3.jpeg',
+    'img/4.jpeg',
+    'img/5.jpeg',
+    'img/6.jpeg',
+    'img/7.jpeg',
+    'img/8.jpeg'
 ];
 
 function changeImage(n) {
